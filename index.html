@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz Web App</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcom to Quiz App</h1>
+
+        <div class="tabs">
+            <button onclick="showTab('login')">Login</button>
+            <button onclick="showTab('register')">Register</button>
+        </div>
+
+        <div id="login" class="form">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Enter your email" />
+            <input type="password" id="loginPassword" placeholder="Enter your password" />
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="register" class="form" style="display:none;">
+            <h2>Register a new account</h2>
+            <input type="email" id="registerEmail" placeholder="Enter your email" />
+            <input type="password" id="registerPassword" placeholder="Enter your password" />
+            <button onclick="register()">Register</button>
+        </div>
+    </div>
+
+    <script src="Script/"></script>
+</body>
+
+</html>
